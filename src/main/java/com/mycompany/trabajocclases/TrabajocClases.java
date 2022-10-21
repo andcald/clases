@@ -47,13 +47,13 @@ public class TrabajocClases {
         lugarMatricula.ciudad = "Cuenca";
         lugarMatricula.descripcion = "Mayancela";
         lugarMatricula.provincia = "Azuay";
-        lugarMatricula.lugarMatricula = auto1;
+        lugarMatricula.lugarMatricula = auto2;
         
          var lugarMatricula1 = new lugarMatricula();
-        lugarMatricula1.ciudad = "Cuenca";
-        lugarMatricula1.descripcion = "Mayancela";
-        lugarMatricula1.provincia = "Azuay";
-        lugarMatricula1.lugarMatricula = auto2;
+        lugarMatricula1.ciudad = "Quito";
+        lugarMatricula1.descripcion = "Chillos";
+        lugarMatricula1.provincia = "Pichincha";
+        lugarMatricula1.lugarMatricula = auto1;
 
         System.out.println(auto1.mostrarInfo());
         System.out.println(auto2.mostrarInfo());
