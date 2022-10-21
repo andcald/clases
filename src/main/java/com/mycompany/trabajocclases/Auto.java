@@ -17,12 +17,14 @@ public class Auto {
     double precio;
     int cilindrajeMotor;
     Propietario owner;
+    lugarMatricula lugarM;
 
     public String mostrarInfo() {
         var retorno = "El auto tiene placa: " + this.placa + " es marca: " + this.marca
                 + "  El año del auto es: " + this.anio + " el dueño es " + this.owner.nombre
-                + " la direccion es " + this.owner.direccion;
-
+                + " la direccion es " + this.owner.direccion+
+"El carro se matriculo en:  " + this.lugarM.provincia  + ", " + this.lugarM.ciudad+ " en el centro de matriculacion: "
+               + this.lugarM.descripcion +"  y el dueño es : "+this.owner.nombre;
         return retorno;
     }
 }

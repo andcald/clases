@@ -13,7 +13,15 @@ public class TrabajocClases {
 
     public static void main(String[] args) {
         var propietario = new Propietario();
-
+  var lugarMatricula = new lugarMatricula();
+   lugarMatricula.ciudad = "Cuenca";
+        lugarMatricula.descripcion = "Mayancela";
+        lugarMatricula.provincia = "Azuay";
+        
+         var lugarMatricula1 = new lugarMatricula();
+        lugarMatricula1.ciudad = "Quito";
+        lugarMatricula1.descripcion = "Chillos";
+        lugarMatricula1.provincia = "Pichincha";
         propietario.nombre = "Andres";
         propietario.direccion = "Cuenca";
         propietario.telefono = "074108874";
@@ -33,6 +41,7 @@ public class TrabajocClases {
         auto1.precio = 20000;
         auto1.cilindrajeMotor = 1600;
         auto1.owner = propietario1;
+        auto1.lugarM = lugarMatricula;
 
         var auto2 = new Auto();
         auto2.marca = "Chevrolet";
@@ -42,23 +51,15 @@ public class TrabajocClases {
         auto2.precio = 20000;
         auto2.cilindrajeMotor = 1600;
         auto2.owner = propietario;
+        auto2.lugarM = lugarMatricula1 ;
 
-        var lugarMatricula = new lugarMatricula();
-        lugarMatricula.ciudad = "Cuenca";
-        lugarMatricula.descripcion = "Mayancela";
-        lugarMatricula.provincia = "Azuay";
-        lugarMatricula.lugarMatricula = auto2;
+      
+       
         
-         var lugarMatricula1 = new lugarMatricula();
-        lugarMatricula1.ciudad = "Quito";
-        lugarMatricula1.descripcion = "Chillos";
-        lugarMatricula1.provincia = "Pichincha";
-        lugarMatricula1.lugarMatricula = auto1;
 
         System.out.println(auto1.mostrarInfo());
         System.out.println(auto2.mostrarInfo());
 
-        System.out.println(lugarMatricula.mostrarInfo());
-        System.out.println(lugarMatricula1.mostrarInfo());
+      
     }
 }
